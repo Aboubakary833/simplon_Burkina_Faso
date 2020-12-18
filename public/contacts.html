@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacts</title>
+    <link rel="stylesheet" href="../src/styles/bootstrap.min.css">
+    <link rel="stylesheet" href="../src/styles/style.css">
+    <script type="module" src="../src/components/AppHeader.js"></script>
+    <style>
+    .reveal-hidden {
+    opacity: 0;
+    transform: translateY(-25px);
+}
+    .reveal-visible {
+    opacity: 1;
+    transform: translateY(0);
+    transition: 1s;
+}
+input[type="submit"] {
+  border: 1px solid #CE0033;
+}
+input[type="submit"]:hover{
+  border: .5px solid #fff;
+  background-color: #CE0033;
+  color: #fff;
+  box-shadow: 0 0 0 3px #CE0033;
+}
+footer{
+    background: #CE0033;
+    opacity: .9;
+}
+    </style>
+</head>
+<body>
+  <app-header
+  href1="index.html"
+  href2="service.html"
+  href3="alumnis.html"
+  href4="contacts.html"
+  src='./'
+  active="contacts"
+ ></app-header>
+        <div class="container">
+            <div class="row ">
+                <div class="col-sm-8 mx-auto">
+                    <h1 class=" mt-3 text-center">Nous contacter</h1>
+                    <form class="text-center" method="POST" action="#">
+                        <div class="form-group mt-5">
+                          <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="votre email">
+                        </div>
+                        <div class="form-group">
+                          <textarea class="form-control mt-3" id="exampleFormControlTextarea1" rows="6" placeholder="Message..."></textarea>
+                        </div>
+                        <input class="btn px-4 py-2 text-center" type="submit" value="Envoyer">
+                      </form>
+                </div>
+            </div>
+        </div>
+        <div class="container mt-5">
+          <app-footer></app-footer>
+        </div>
+        <script src="../src/components/AppFooter.js"></script>
+        <script src="../src/scripts/app.js"></script>
+</body>
+</html>

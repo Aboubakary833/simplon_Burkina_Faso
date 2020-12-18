@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simplon_Burkina_services</title>
+    <link rel="stylesheet" href="../src/styles/bootstrap.min.css">
+    <link rel="stylesheet" href="../src/styles/style.css">
+    <script type="module" src="../src/components/AppHeader.js"></script>
+    <style>
+    .reveal-hidden {
+    opacity: 0;
+    transform: translateY(-25px);
+}
+    .reveal-visible {
+    opacity: 1;
+    transform: translateY(0);
+    transition: 1s;
+}
+footer{
+    background: #CE0033;
+    opacity: .9;
+}
+    </style>
+</head>
+<body>
+    <app-header
+    href1="index.html"
+    href2="service.html"
+    href3="alumnis.html"
+    href4="contacts.html"
+    src='./'
+    active="service"
+   ></app-header>
+        <div class="container">
+            <div class="row d-flex justify-content-center mt-4 reveal-hidden">
+                <h1>Nos services</h1>
+            </div>
+            <div class="row d-flex flex-column text-center mt-3 reveal-hidden">
+                <h2>Formation en developpement web et web mobile</h2>
+                <p style="font-size: 25px;">Nous offrons des formations gratuites en développement web et web mobile à des jeunes en collaboration avec nos partenaires.</p>
+            </div>
+            <div class="row d-flex flex-column text-center mt-3 reveal-hidden">
+                <h2>Formation en réferent digital</h2>
+                <p style="font-size: 25px;">Nous offrons aussi des formations gratuites en référence digitale à des jeunes en collaboration avec nos partenaires.</p>
+            </div>
+        </div>
+        <div class="container">
+            <app-footer></app-footer>
+        </div>
+        <script src="../src/components/AppFooter.js"></script>
+        <script src="../src/scripts/app.js"></script>
+</body>
+</html>
